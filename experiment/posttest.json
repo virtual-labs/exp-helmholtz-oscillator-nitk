@@ -21,8 +21,8 @@
     {
       "question": "What happens when the frequency of the tuning fork does not match the resonant frequency of the Helmholtz resonator?",
       "answers": {
-        "a": "The air inside the resonator vibrates, producing a loud sound",
-        "b": "The air inside the resonator does not vibrate, producing no sound",
+        "a": "The air inside the resonator vibrates, producing less sound",
+        "b": "The air inside the resonator does not vibrate, producing any sound",
         "c": "The sound produced by the tuning fork is amplified by the resonator",
         "d": "The resonant frequency of the resonator is adjusted to match the frequency of the tuning fork"
       },
@@ -32,7 +32,7 @@
         "c": "",
         "d": ""
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "intermediate"
     },
     {
@@ -70,7 +70,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "What should be the position of the tuning fork with respect to the bottle neck for resonance?",
+      "question": " What should be the position of the tuning fork with respect to the neck of the bottle for resonance?",
       "answers": {
         "a": "Horizontally",
         "b": "Diagonally",
