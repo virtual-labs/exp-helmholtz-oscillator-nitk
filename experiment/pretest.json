@@ -70,12 +70,12 @@
       "difficulty": "advanced"
     },
     {
-      "question": "A beaker is having 1000 CC capacity and it is filled with 600 CC water. What could be the resonance frequency of a vibrating tuning fork kept above the neck. Given  n<sup>2</sup>V= 24x106s<sup>-2</sup> CC",
+      "question": "A beaker is having 1000 CC capacity and it is filled with 600 CC water. What could be the resonance frequency of a vibrating tuning fork kept above the neck. Given  n<sup>2</sup>V= 24x10<sup>6</sup>s<sup>-2</sup> CC",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "200 Hz",
+        "b": "225 Hz",
+        "c": "250 Hz",
+        "d": "244 Hz"
       },
       "explanations": {
         "a": "",
