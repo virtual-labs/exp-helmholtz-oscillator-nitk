@@ -5,7 +5,7 @@
     <th>References</th>
     <th>Contributors list</th>
   </tr>
-  <tr style="background-color: white">
+  <tr style="background-color: white; width:250px">
     <td>
     <ol>
     <li>Young, Hugh D., and Roger A. Freedman. University Physics with Modern Physics and MasteringPhysics. Academic Imports Sweden AB, 2015.</li>
