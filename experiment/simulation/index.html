@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solve</title>
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -19,6 +21,7 @@
     <script defer src="js/script.js"></script>
   </head>
   <body>
+    <div class="container">
     <div class="title-div-container">
     <div class="title-div">
     <div class="logo-div">
@@ -26,7 +29,6 @@
     <h1>Helmholtz Resonator</h1>
   </div>
       </div>
-    <div class="container">
       <div class="sidebar">
         <ul class="tool-menu">
           <li class="tool-list tool-objective" onclick="displayDiv(this)">
@@ -71,7 +73,10 @@
       <div class="main">
         <div class="main-section">
           <div id="simulation" class="main__task-div">
-            <h3 class="task-title">Objective</h3>
+            <h3 class="task-title"><span class="task-title--text">Objective</span>
+              <span class="sim-icons hide">
+                <img src="./images/controls-wt.png" alt="controls" title="Controls" class="sim-icon sim-icon--control">
+              </span></h3>
            
             <div class="canvas__div">
               <div class="task-screen objective">
