@@ -8,4 +8,3 @@
 6. finally, select the tuning fork having an unknown frequency and repeat the previous steps.
 7. Click the “Observations” button to display the observation table.
 8. Click the “ Graph’ button to display the graph and to show the unknown frequency from the graph.
-9. Click the “Result” button to display the experiment results.
