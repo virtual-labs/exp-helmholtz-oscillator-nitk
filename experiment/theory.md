@@ -14,6 +14,6 @@ A graph plotted between Volume V and 1/n<sup>2</sup> should be a straight line. 
 
 <center>
 
-![Alt text](images/setup.png)
+<img src="images/resonator.png" width=600 />
 
 </center>
