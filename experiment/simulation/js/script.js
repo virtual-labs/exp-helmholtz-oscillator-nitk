@@ -79,6 +79,7 @@ function getValue() {
   document.getElementById("fill1").innerHTML = inp.value;
 }
 function Fill() {
+  document.querySelector(".fill").disabled = true;
   var pic;
   pic = "images/img2.jpg";
   document.getElementById("resonatorImage").src = pic;
@@ -129,6 +130,32 @@ var images = [
 ];
 
 function startAnimation() {
+  document.querySelector(".strt").disabled = true;
+  resonateWithRubber();
+}
+
+function resonateWithRubber() {
+  document.querySelector(".step-info").innerHTML =
+    "Hit the tuning fork on a rubber pad to vibrate it.";
+  document.getElementById("resonatorImage").style.display = "none";
+  document.querySelector(".rubber-pad").style.display = "block";
+  document.querySelector(".stiff").style.animation =
+    "animateRubber 1s  forwards";
+  setTimeout(function () {
+    document.querySelector(".stiff").style.display = "none";
+    document.querySelector(".vibrated").style.display = "block";
+    setTimeout(function () {
+      document.querySelector(".rubber-pad").style.display = "none";
+      document.querySelector(".vibrated").style.display = "none";
+      startResonator();
+    }, 1000);
+  }, 1100);
+}
+
+function startResonator() {
+  document.querySelector(".step-info").innerHTML =
+    "Keep the tuning fork on the resonator mouth to observe the resonance";
+  document.getElementById("resonatorImage").style.display = "block";
   var image = document.getElementById("resonatorImage");
   image.src = images[counter];
   if (counter === 16) {
@@ -136,11 +163,11 @@ function startAnimation() {
     return;
   }
   counter = (counter + 1) % 17;
-  setTimeout(startAnimation, 700);
+  setTimeout(startResonator, 700);
   document.getElementById("att").disabled = false;
   document.getElementById("obsvtns").disabled = false;
-  //  document.getElementById('shwrslt').disabled=false;
 }
+
 function addtable() {
   var table = document.getElementById("obstable");
   var row = table.insertRow(num);
