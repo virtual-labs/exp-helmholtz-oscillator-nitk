@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "How does a Helmholtz resonator filled with water produce sound?",
+      "answers": {
+        "a": "When tuning fork resonate with air",
+        "b": "When tuning fork resonate with water",
+        "c": "Both a and b",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the resonant frequency of a Helmholtz resonator?",
+      "answers": {
+        "a": "The frequency of the tuning fork",
+        "b": "The frequency at which the air inside the resonator vibrates most strongly",
+        "c": "The frequency at which the water inside the resonator vibrates most strongly",
+        "d": "Both b and c"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If n is the frequency of the tuning fork and V is the resonating air volume, then for a particular resonator",
+      "answers": {
+        "a": "nV = Constant",
+        "b": "n/V = Constant",
+        "c": "n<sup>2</sup>V =Constant",
+        "d": "n<sup>2</sup>/V =Constant"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "If frequency of the tuning fork n1= 500Hz, resonating air volume V1= 100 cc, and n2=200 Hz, what is V2?",
+      "answers": {
+        "a": "625cc ",
+        "b": "600cc ",
+        "c": "250cc ",
+        "d": "16cc "
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A beaker is having 1000 CC capacity and it is filled with 600 CC water. What could be the resonance frequency of a vibrating tuning fork kept above the neck. Given  n<sup>2</sup>V= 24x10<sup>6</sup>s<sup>-2</sup> CC",
+      "answers": {
+        "a": "200 Hz",
+        "b": "225 Hz",
+        "c": "250 Hz",
+        "d": "244 Hz"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    }
+  ]
+}

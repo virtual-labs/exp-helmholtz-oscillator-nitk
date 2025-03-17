@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solve</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+  />
+    
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <div class="title-div-container">
+    <div class="title-div">
+    <div class="logo-div">
+    <a href="#"><img src="images/logo_nitk.png" alt="Logo" class="logo" /></a></div>
+    <h1>Helmholtz Resonator</h1>
+  </div>
+      </div>
+      <div class="sidebar">
+        <ul class="tool-menu">
+          <li class="tool-list tool-objective" onclick="displayDiv(this)">
+            <a class="tool-link" title="Objective"
+              >
+              <img src="./images/objective.png" alt="Objective" class="icons">
+            </a>
+            <span>Objective</span>
+          </li>
+          <li class="tool-list tool-apparatus" onclick="displayDiv(this)">
+            <a class="tool-link" title="Apparatus"
+              ><img src="./images/apparatus.png" alt="Objective" class="icons"></a
+              >
+              <span>Apparatus</span>
+          </li>
+          
+          <li class="tool-list tool-practice" onclick="displayDiv(this)">
+            <a class="tool-link" title="Experiment"
+              ><img src="./images/solution.png" alt="solution" class="icons"
+              ></a
+              >
+              <span>Experiment</span>
+          </li>
+          <li class="tool-list tool-help" onclick="displayDiv(this)" >
+            <a class="tool-link" title="Help" onclick="help()"
+              ><img src="./images/help1.png" alt="Help" class="icons"
+              ></a
+              >
+              <span>Help</span>
+          </li>
+          <li class="tool-list">
+            <a href="#" class="tool-link" id="refreshLink" title="Refresh">
+              <img id="reset" type="reset" onclick="Refresh()" src="images/bluecwdull.svg" alt="Refresh Button" class="reset">
+            </a>
+            <span class="refresh">Reset</span>
+          </li>
+          
+
+        </ul>
+        
+      </div> 
+      <div class="main">
+        <div class="main-section">
+          <div id="simulation" class="main__task-div">
+            <h3 class="task-title"><span class="task-title--text">Objective</span>
+              <span class="sim-icons hide">
+                <img src="./images/controls-wt.png" alt="controls" title="Controls" class="sim-icon sim-icon--control">
+              </span></h3>
+           
+            <div class="canvas__div">
+              <div class="task-screen objective">
+                <!-- <h3 class="objective__title">Objective</h3> -->
+                  <ol class="objective__main">
+                    <p>
+                      To verify the relation between the frequency n and the resonating volume
+                      V and hence to find the
+                      unknown frequency of the given tuning fork.
+                    </p>
+                  <!-- <li>&ensp;To calculate the Hall coefficient and the carrier concentration of the sample material. -->
+                  </li>
+              </ol>
+
+              </div>
+              <div class="task-screen apparatus hide">
+                <!-- <h3 class="apparatus__title">Apparatus</h3> -->
+                <p> Resonator bottle, Set of tuning forks, Rubber pad, and Measuring jar.
+                </p>
+                <div class="apparatus-screen">
+                  <div class="apparatus-tool">
+                    <img src="images/4.png" style="width: 100px; height: 100px" alt="" />
+                    <span>Resonator bottle</span>
+                  </div>
+                  <div class="apparatus-tool">
+                    <img
+                    src="images/2.png"
+                    style="width: 100px; height: 100px; position: relative; "
+                    alt=""
+                  />
+                    <span>Set of tuning forks</span>
+                  </div>
+                  <div class="apparatus-tool">
+                    <img src="images/3.png" style="width: 100px; height: 100px" alt="" />
+                    <span>Measuring jar</span>
+                  </div>
+                  <div class="apparatus-tool">
+                    <img
+                    src="images/1.png"
+                    style="width: 100px; height: 100px; position: relative; "
+                    alt=""
+                  />
+                    <span>Rubber pad</span>
+                  </div>
+                 
+                </div>
+               
+              </div>
+           
+              <div class="task-screen practice hide">
+                <div id="mainsimulation" style='display: flex;align-items: center;justify-content: center;'>
+                  <div class="rubber-pad">
+                    <img src="./images/1.png" alt="" id="rubber" class="rubber">
+                    <img src="./images/stiff.png" alt="" id="stiff" class="stiff">
+                    <img src="./images/vibrated.png" alt="" id="vibrated" class="vibrated">
+                  </div>
+                  <img id="resonatorImage" src="images/img1.jpg" alt="" class="resonatorImage">
+                  <!-- <a href='index.html'><img src="images/arrow rev.png" style='position:relative;right:535px;top:10px;' alt=""></a> -->
+                  
+                   <p id="add" style="display: none;bottom:550px;">Added Successfully!</p>
+                  </div>
+                  <p class="step-info"></p>
+
+            </div>
+            <div id="observation" class="observation">
+              <table id="obstable" class="obstable">
+              <tr>
+              <th>Frequency (HZ)</th>
+              <th>Volume Of Air Column (CC)</th>
+              </tr>
+              </table>
+              <div class="button-container">
+                <button class="obs-button" onClick="closeobs()">Close</button>
+                <button class="obs-button" id="clear" onClick="clearing()">Clear All</button>
+                <button class="obs-button" id="graphButton" onClick="generateGraph()">Plot Graph</button>
+                <button class="obs-button" id="graphplotted" style="display:none;" onClick="plotted()">V/n^-2 GRAPH</button>
+              </div>
+              </div>
+              <div id="graph-wrapper" class="graph-wrapper">
+                <div id="grph" class="grph">
+                  <canvas id="myChart" class="myChart"></canvas>
+                  <button id="close1" onClick="closegrph()"><span>&times;</span></button>
+                </div>
+            </div>
+            <div id="instructions" style="display: none;">
+              <div class="icontent">
+                  <h2 id="instruct">Instructions</h2>
+                  <ol >
+                    <li>Select "Frequency of tuning fork" using "Frequency of tuning
+                      fork" slider.</li>
+                      <li>Click the "Fill Resonator" button to fill the resonator with water.</li>
+                      <li>Click the "Start" button to start the experiment by activating the tuning fork with rubber pads and letting water flow.</li>
+                      <li>Click on the "Add to Table" button to add the frequency and volume of air column values to the table.</li>
+                      <li>Click on the "Observation" button to view the table.</li>
+                      <li>Click on the "Plot Graph" button to plot the graph.</li>
+                      <li>Click on the "V/n^-2 GRAPH" button to view the garph</li>
+                </ol>
+              </div>
+          </div></div>
+          </div>
+          <div id="variables" class="main__task-div">
+            <div class="settings-sections">
+              <h3 class="task-title">Controls</h3>
+              <div style="display: grid;
+              align-items: center;
+              justify-content: center;padding: 17px;">
+                <!-- <div  > -->
+                <label for='slider'>Frequency of tuning<br>fork:<span id='fill1'>130</span>Hz</label><br>
+                <input id='slider' type='range' min='130' max='250' step='15' value='130' onInput='getValue()'>
+                <div class="button-grid">
+                  <button id="fill" onclick="Fill()" class="fill">Fill Resonator</button>
+                  <button id="strt" onclick="startAnimation()" disabled="" class="strt">Start</button>
+                  <button id="att" onclick="addtable()" disabled="" class="att">Add To Table</button>
+                  <button id="obsvtns" onclick="obs()" disabled="" class="obsvtns">Observations</button>
+              </div>
+                </div>
+          </div>
+          </div>
+         
+          <div class="main__task-div footer">
+            <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
+          </div>
+        </div>
+     
+    </div>
+    </div>
+    
+  
+  <script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>

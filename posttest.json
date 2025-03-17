@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What happens to resonance frequency if water is replaced with kerosene?",
+      "answers": {
+        "a": "Resonance frequency increases",
+        "b": "Resonance frequency decreases",
+        "c": "No change",
+        "d": "This experiment can’t be performed with kerosene"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What happens when the frequency of the tuning fork does not match the resonant frequency of the Helmholtz resonator?",
+      "answers": {
+        "a": "The air inside the resonator vibrates, producing less sound",
+        "b": "The air inside the resonator does not vibrate, producing any sound",
+        "c": "The sound produced by the tuning fork is amplified by the resonator",
+        "d": "The resonant frequency of the resonator is adjusted to match the frequency of the tuning fork"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What does the resonant frequency of a Helmholtz resonator dependent on?",
+      "answers": {
+        "a": "The size and shape of the cavity and neck",
+        "b": "The frequency of the tone generator",
+        "c": "The frequency of the microphone used to measure the sound",
+        "d": "The frequency of the tuning fork"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the nature of  the graph between resonating air volume V and 1/n<sup>2</sup>",
+      "answers": {
+        "a": "Parabolic",
+        "b": "Exponential",
+        "c": "Hyperbolic",
+        "d": "Straight line"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": " What should be the position of the tuning fork with respect to the neck of the bottle for resonance?",
+      "answers": {
+        "a": "Horizontally",
+        "b": "Diagonally",
+        "c": "Vertically",
+        "d": "Any of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    }
+  ]
+}
